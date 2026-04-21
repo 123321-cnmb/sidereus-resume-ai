@@ -1,0 +1,30 @@
+# s.yaml
+edition: 1.0.0
+name: resume-analyzer-project
+access: "default"
+
+services:
+  resume-analyzer-service:
+    component: fc
+    props:
+      region: cn-hangzhou
+      service:
+        name: sidereus-ai
+      function:
+        name: resume-api
+        description: 'FastAPI Resume Analyzer'
+        runtime: python3.10
+        memorySize: 1024
+        timeout: 600
+        codeUri: ./
+        environmentVariables:
+          MY_REAL_API_KEY: "sk-6e3e37ee6c9e4043812e61ff3d824611"
+          DEEPSEEK_BASE_URL: "https://api.deepseek.com"
+        # 👈 这里必须是 main.handler，指向 main.py 里的 handler 函数
+        handler: main.handler 
+      triggers:
+        - name: httpTrigger
+          type: http
+          config:
+            authType: anonymous
+            methods: [GET, POST, OPTIONS]
