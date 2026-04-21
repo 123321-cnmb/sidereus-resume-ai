@@ -1,7 +1,15 @@
+# 排除所有第三方库文件夹
+PIL/
+a2wsgi*/
+annotated*/
+anyio*/
+bin/
+certifi*/
+cffi*/
+charset*/
+click*/
+__pycache__/
 .venv/
 venv/
-__pycache__/
 .s/
 .env
-# 排除所有第三方库（如果你是用 pip install -t . 安装的）
-# 建议只保留你自己的 api, core, models, services, prompts 文件夹
