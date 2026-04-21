@@ -1,0 +1,15 @@
+# 忽略 Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 忽略第三方库文件夹（由于你之前误传了很多，这里建议列出）
+venv/
+.venv/
+bin/
+lib/
+include/
+
+# 忽略环境配置文件
+.env
+.s/
