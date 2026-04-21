@@ -5,7 +5,7 @@
 ## 🔗 项目链接
 * **线上演示地址 (GitHub Pages)**: [https://123321-cnmb.github.io/sidereus-resume-ai/]
 * **后端 API 地址 (阿里云 FC)**: `https://resume-api-sidereus-ai-cstsngiwez.cn-hangzhou.fcapp.run`
-* **GitHub 仓库**: [[此处替换为你的 GitHub 仓库链接](https://github.com/123321-cnmb/sidereus-resume-ai.git)]
+* **GitHub 仓库**: [(https://github.com/123321-cnmb/sidereus-resume-ai.git)]
 
 ---
 
