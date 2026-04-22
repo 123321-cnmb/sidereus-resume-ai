@@ -18,9 +18,8 @@ services:
         timeout: 600
         codeUri: ./
         environmentVariables:
-          MY_REAL_API_KEY: "sk-6e3e37ee6c9e4043812e61ff3d824611"
+          MY_REAL_API_KEY: "API_KEY"
           DEEPSEEK_BASE_URL: "https://api.deepseek.com"
-        # 👈 这里必须是 main.handler，指向 main.py 里的 handler 函数
         handler: main.handler 
       triggers:
         - name: httpTrigger
